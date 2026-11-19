@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kananelo Hato - Portfolio</title>
+<style>
+  body { font-family: Arial; margin: 0; background: #f4f4f4; color: #333; }
+  header { background: #4a90e2; color: white; text-align: center; padding: 40px 20px; }
+  header h1 { margin: 0; }
+  section { background: white; margin: 20px; padding: 20px; border-radius: 10px; }
+  h2 { color: #4a90e2; }
+  .skill { background: #eef4ff; display: inline-block; padding: 8px 12px; margin: 5px; border-radius: 20px; }
+  button { background: #4a90e2; color: white; border: none; padding: 10px 20px; border-radius: 5px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Kananelo Hato</h1>
+  <p>Student | Aspiring Developer | Maseru, Lesotho</p>
+  <button onclick="document.getElementById('contact').scrollIntoView()">Contact Me</button>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>Hello! I'm Kananelo. I love learning technology and business. I enjoy creating simple websites and working on team projects.</p>
+</section>
+
+<section>
+  <h2>My Skills</h2>
+  <span class="skill">HTML</span>
+  <span class="skill">JavaScript</span>
+  <span class="skill">CSS</span>
+  <span class="skill">Communication</span>
+  <span class="skill">Teamwork</span>
+</section>
+
+<section>
+  <h2>My Projects</h2>
+  <h3>1. Add Two Numbers App</h3>
+  <p>A simple website that adds two numbers using JavaScript and getElementById.</p>
+  <h3>2. Aqua Pure Meeting Role-play</h3>
+  <p>Played Daizy (Kananelo) - checked stock, budgets and distribution records in a business meeting.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: kananelo@example.com</p>
+  <p>Location: Maseru, Lesotho</p>
+  <p id="msg"></p>
+  <button onclick="showMsg()">Say Hello</button>
+</section>
+
+<script>
+function showMsg() {
+  document.getElementById("msg").innerHTML = "Thank you for visiting my portfolio!";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Lesotho - Kingdom in the Sky</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Visit Lesotho</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Open menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Lesotho</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-3">
+              <button id="themeBtn" class="btn btn-outline-dark">🌙 Dark</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    
+    <section class="hero">
+      <h1>Kingdom in the Sky</h1>
+      <p>Welcome to Lesotho - Mountains and Culture</p>
+      <input type="search" id="searchBox" class="form-control form-control-lg" placeholder="Search destinations..." aria-label="Search destinations">
+      <a href="#destinations" class="btn-white d-inline-block text-decoration-none">Explore Now</a>
+    </section>
+
+  
+    <div class="container mt-4" id="welcome"></div>
+
+
+    <section id="destinations">
+      <div class="container">
+        <h2 class="section-title">Popular Destinations</h2>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 dest">
+            <article class="card">
+              <img src="33.jpeg" class="card-img-top" alt="Maletsunyane Falls">
+              <div class="card-body">
+                <h3 class="h5">Maletsunyane Falls</h3>
+                <span class="badge bg-success">Nature</span>
+                <p class="mt-2">A 192 m waterfall in Semonkong, one of the highest in Southern Africa.</p>
+                <p class="price">From M450</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 dest">
+            <article class="card">
+              <img src="thaba.jpg" class="card-img-top" alt="Thaba Bosiu mountain">
+              <div class="card-body">
+                <h3 class="h5">Thaba Bosiu</h3>
+                <span class="badge bg-warning text-dark">Culture</span>
+                <p class="mt-2">The mountain fortress of King Moshoeshoe I, near Maseru.</p>
+                <p class="price">From M250</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 dest">
+            <article class="card">
+              <img src="2.jpg" class="card-img-top" alt="Katse Dam">
+              <div class="card-body">
+                <h3 class="h5">Katse Dam</h3>
+                <span class="badge bg-success">Nature</span>
+                <p class="mt-2">A huge dam in the Maluti Mountains with boat trips and great views.</p>
+                <p class="price">From M400</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 dest">
+            <article class="card">
+              <img src="sani.jpeg" class="card-img-top" alt="Sani Pass road">
+              <div class="card-body">
+                <h3 class="h5">Sani Pass</h3>
+                <span class="badge bg-danger">Adventure</span>
+                <p class="mt-2">A steep mountain pass in Mokhotlong, perfect for 4x4 trips.</p>
+                <p class="price">From M650</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 dest">
+            <article class="card">
+              <img src="Afriski.jpg" class="card-img-top" alt="Afriski Mountain Resort in snow">
+              <div class="card-body">
+                <h3 class="h5">Afriski Mountain Resort</h3>
+                <span class="badge bg-danger">Adventure</span>
+                <p class="mt-2">Ski and snowboard in Africa from June to August.</p>
+                <p class="price">From M900</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 dest">
+            <article class="card">
+              <img src="thebe.jpeg" class="card-img-top" alt="Sehlabathebe National Park">
+              <div class="card-body">
+                <h3 class="h5">Sehlabathebe National Park</h3>
+                <span class="badge bg-success">Nature</span>
+                <p class="mt-2">A UNESCO World Heritage park with rock pools and San rock art.</p>
+                <p class="price">From M500</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div id="noResults" class="alert alert-warning mt-4 d-none">No destinations found. Try another name.</div>
+      </div>
+    </section>
+
+  
+    <section class="pt-0">
+      <div class="container">
+        <h2 class="section-title">Travel Tips</h2>
+        <div class="accordion" id="tips">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tip1">When is the best time to visit?</button>
+            </h3>
+            <div id="tip1" class="accordion-collapse collapse show" data-bs-parent="#tips">
+              <div class="accordion-body">September to April for hiking, June to August for snow and skiing.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tip2">What should I pack?</button>
+            </h3>
+            <div id="tip2" class="accordion-collapse collapse" data-bs-parent="#tips">
+              <div class="accordion-body">Warm clothes, a rain jacket, sunscreen and comfortable shoes.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tip3">What money is used?</button>
+            </h3>
+            <div id="tip3" class="accordion-collapse collapse" data-bs-parent="#tips">
+              <div class="accordion-body">The Loti (M). The South African Rand is also accepted.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <p class="mb-0">&copy; 2026 Visit Lesotho | Web Design Assignment (DIWD2110)</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
